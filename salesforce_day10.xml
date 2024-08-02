@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+	
+  <test thread-count="5" name="Test">
+	<parameter name = "url" value="https://login.salesforce.com"> </parameter>
+	<parameter name = "username" value="dilip@testleaf.com"> </parameter>
+	<parameter name = "password" value="testleaf@2024"> </parameter>
+	
+	<classes>
+		<!--<class name="week5.day10.homesassignment.SalesForceStaticParam"/>-->
+		<class name="week5.day10.homesassignment.SalesForceDynamicParam"/>
+		<!--<class name="week5.day10.homesassignment.SalesForceTests"/>-->
+	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
